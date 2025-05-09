@@ -1,16 +1,16 @@
 data_movement = [
     {
-        title: "Move",
+        title: "Mover",
         icon: "run",
-        subtitle: "Cost: 5ft per 5ft",
-        description: "Movement cost: 5ft per 5ft moved",
-        reference: "PHB, pg. 190.",
+        subtitle: "Coste: 5 pies cada 5 pies",
+        description: "En tu turno, puedes moverte una distancia que no supere tu velocidad.",
+        reference: "PHB, pg. 24.",
         bullets: [
-            "If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you've already moved from the new speed.",
-            "You can move through a nonhostile creature's space.",
-            "You can move through a hostile creature's space only if the creature is at least two sizes larger or smaller than you.",
-            "Another creature's space is difficult terrain for you.",
-            "Whether a creature is a friend or an enemy, you can't willingly end your move in its space."
+            "Tu movimiento puede incluir trepar, arrastrarse, saltar, y nadar, se pueden alternar entre si. Cada vez que cambies, resta la distancia ya movida hasta acabar tu movimiento.",
+            "Puedes mover a través del espacio de una criatura no hostil.",
+            "Puedes mover a través del espacio de una criatura hostil si es al menos dos categorías de tamaño mayor o menor que tú.",
+            "Un espacio ocupado es terreno difícil para ti.",
+            "Hostil o no, no puedes acabar voluntariamente tu movimiento en el espacio de otra criatura."
         ]
     },
     {
