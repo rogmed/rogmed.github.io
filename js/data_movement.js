@@ -89,7 +89,7 @@ data_movement = [
         reference: "PHB, pg. 370.",
         bullets: [
 
-            "Saltas una distancia igual a tu <b>Puntuación de Fuerza/b> si corres al menos 10' antes del salto.",
+            "Saltas una distancia igual a tu <b>Puntuación de Fuerza</b> si corres al menos 10' antes del salto.",
             "Si saltas sin carrerilla, solo saltas la mitad de esa distancia.",
             "Si aterrizas en terreno difícil, debes superar una prueba de Destreza (Acrobacias) o quedas <b>derribado</b>",
             "Si hay un obstáculo de altura como mucho 1/4 de la distancia del salto, necesitas una tirada de Fuerza (Atletismo) para superarlo."
