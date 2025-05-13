@@ -33,16 +33,25 @@ data_condition = [
         ]
     },
     {
-        title: "Exhaustion",
+        title: "Cansancio",
         icon: "crawl",
-        subtitle: "You are exhausted",
-        description: "Exhaustion is measured in six levels",
-        reference: "PHB, pg. 291.",
+        subtitle: "Estás cansado",
+        description: "El cansancio se mide en 6 niveles",
+        reference: "PHB, pg. 366.",
         bullets: [
-            "<table><tr><th>Level</th><th></th><th></th><th style='text-align:left'>Effect</th></tr><tr><td>1</td><td></td><td></td><td>Disadvantage on ability checks</td></tr><tr><td>2</td><td></td><td></td><td>Speed halved</td></tr><tr><td>3</td><td></td><td></td><td>Disadvantage on attack rolls and saving throws</td></tr><tr><td>4</td><td></td><td></td><td>Hit point maximum halved</td></tr><tr><td>5</td><td></td><td></td><td>Speed reduced to 0</td></tr><tr><td>6</td><td></td><td></td><td>Death</td></tr></table>",
-            "You suffer the effect of your current level of exhaustion as well as all lower levels.",
-            "Finishing a long rest reduces your exhaustion level by 1, provided that you have also had some food and drink.",
-            "Also, being raised from the dead reduces a creature’s exhaustion level by 1."
+            "<table>"+
+                "<tr><th style='text-align:left;width:30%'>Nivel</th><th style='text-align:left;width:40%'>Tiradas d20</th></th><th style='text-align:left'>Velocidad</th></tr>"+
+                "<tr><td>1</td><td>-2</td><td>-5'</td></tr>"+
+                "<tr><td>2</td><td>-4</td><td>-10'</td></tr>"+
+                "<tr><td>3</td><td>-6</td><td>-15'</td></tr>"+
+                "<tr><td>4</td><td>-8</td><td>-20'</td></tr>"+
+                "<tr><td>5</td><td>-10</td><td>-25'</td></tr>"+
+                "<tr><td>6</td><td>Muerte</td><td></td></tr>"+
+            "</table>",
+            "<b>Niveles de cansancio.</b> Este estado es acumulativo. Cuando lo recibes, subes un nivel de cansancio. Mueres si tu Cansancio es nivel 6.",
+            "<b>Pruebas de d20 afectadas.</b> Cuando haces una prueba con d20, la tirada se reduce en 2 por nivel de cansancio.",
+            "<b>Velocidad reducida.</b> Tu velocidad se reduce en 5 pies por cada nivel de Cansancio.",
+            "<b>Reducir nivel de cansancio.</b> Al terminar un descanso largo reduces en 1 tu nivel de cansancio. Cuando llega a 0, el estado acaba."
         ]
     },
     {
