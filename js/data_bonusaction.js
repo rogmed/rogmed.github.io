@@ -32,5 +32,15 @@ data_bonusaction = [
         bullets: [
 
         ]
+    },
+        {
+        title: "Poción",
+        icon: "potion-ball",
+        subtitle: "Beber o administrar poción",
+        description: "",
+        reference: "PHB, pg. 227",
+        bullets: [
+            "Como acción adicional, puedes beberla o administrarla a otra criatura a 5 pies de ti."
+        ]
     }
 ]
