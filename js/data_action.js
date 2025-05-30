@@ -14,16 +14,16 @@ data_action = [
         ]
     },
     {
-        title: "Grapple",
+        title: "Agarre",
         icon: "grab",
-        subtitle: "Special melee attack",
-        description: "Attempt to grab a creature or wrestle with it",
-        reference: "PHB, pg. 195.",
+        subtitle: "Ataque sin armas",
+        description: "Intentas agarrar una criatura",
+        reference: "PHB, pg. 362.",
         bullets: [
-            "You can use the <i>Attack</i> action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
-            "The target of your grapple must be no more than one size larger than you, and it must be within your reach.",
-            "Using at least one free hand, you try to seize the target by making a grapple check, a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you succeed, you subject the target to the grappled condition (its speed is set to 0)."
+            "El objetivo debe superar una tirada de salvación de Fuerza o Destreza (a su elección) con CD 8 + bon. por fuerza + bon. por competencia",
+            "El tamaño del objetivo debe de estar, como mucho, una categoría por encima de la tuya.",
+            "Debes tener una mano libre para agarrarlo.",
+            "Si tienes éxito, sometes al objetivo al estado <i>agarrado</i>"
         ]
     },
     {
