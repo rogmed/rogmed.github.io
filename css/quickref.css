@@ -166,6 +166,14 @@
     color: ForestGreen;
 }
 
+#section-mastery, #section-mastery .item-icon {
+    background-color: darkred;
+    border-color: darkred;
+}
+#section-mastery .text {
+    color: darkred;
+}
+
 
 /* ------------------------------------------------------------------------- */
 /* Page container */

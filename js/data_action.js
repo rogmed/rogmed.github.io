@@ -1,16 +1,14 @@
 data_action = [
     {
-        title: "Attack",
-        icon: "crossed-swords",
-        subtitle: "Melee or ranged attack",
-        description: "Perform a melee or ranged attack with your weapon",
-        reference: "PHB, pgs. 192,194-195.",
+        title: "Atacar",
+        icon: "mixed-swords",
+        subtitle: "Cuerpo a cuerpo o a distancia",
+        description: "Atacas con un arma o un ataque sin armas",
+        reference: "PHB, pgs. 15, 25-26, 362",
         bullets: [
-            "Certain features, such as the <i>Extra Attack</i> feature of the fighter, allow you to make more than one attack with this action. Each of these attacks is a separate roll and may target different creatures. You may move in between these attacks.",
-            "When you attack with a light melee weapon, you can use a bonus action to attack with your other hand (see the <i>Offhand attack</i> bonus action).",
-            "You may replace one of your melee attacks with a <i>Grapple</i> or a <i>Shove</i>.",
-            "Some conditions give advantage on the attack: attacks against blinded, paralyzed, petrified, restrained, stunned, or unconscious targets; melee attacks against prone targets; attacks by invisible or hidden attackers.",
-            "Some conditions give disadvantage on the attack: attacks against invisible or hidden targets; ranged attacks against prone targets; attacks by blinded, frightened, poisoned, or restrained attackers."
+            "<b>Equiparse y desequiparse armas.</b> Como parte de un ataque con arma, puedes equipartela o desequipartela. Puedes hacerlo antes o después del ataque. Equiparte incluye desenvainar o recogerla. Desequipar incluye envainar, guardar o soltarla.",
+            "Algunos rasgos, como <i>Ataque Adicional</i> del guerrero, te permiten hacer mas de un ataque con esta acción. Cada uno de estos ataques es una tirada aparte y puede tener disintas criaturas como objetivo. Te puedes mover entre estos ataques.", 
+            "Puedes sustituir uno de tus ataques cuerpo a cuerpo por <i>Agarre</i> o <i>Empujón</i>",
         ]
     },
     {
@@ -23,20 +21,19 @@ data_action = [
             "El objetivo debe superar una tirada de salvación de Fuerza o Destreza (a su elección) con CD 8 + bon. por fuerza + bon. por competencia",
             "El tamaño del objetivo debe de estar, como mucho, una categoría por encima de la tuya.",
             "Debes tener una mano libre para agarrarlo.",
-            "Si tienes éxito, sometes al objetivo al estado <i>agarrado</i>"
+            "Si tienes éxito, <b>sometes al objetivo al estado <i>agarrado</i></b>"
         ]
     },
     {
-        title: "Shove",
+        title: "Empujón",
         icon: "hand",
-        subtitle: "Special melee attack",
-        description: "Shove a creature, either to knock it prone or push it away from you",
-        reference: "PHB, pg. 195.",
+        subtitle: "Ataque sin armas",
+        description: "Empuja a una criatura, para derribarla o apartarla de ti.",
+        reference: "PHB, pg. 362.",
         bullets: [
-            "Using the <i>Attack</i> action, you can make a special melee attack to shove a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
-            "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
-            "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you win the contest, you either knock the target prone or push it 5 feet away from you."
+            "El objetivo debe superar una tirada de salvación de Fuerza o Destreza (a su elección) con CD 8 + bon. por fuerza + bon. por competencia",
+            "El tamaño del objetivo debe de estar, como mucho, una categoría por encima de la tuya.",
+            "Si tienes éxito, lo <b>empujas 5 pies o queda <i>derribado</i></b>."
         ]
     },
     {
