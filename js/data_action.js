@@ -7,8 +7,13 @@ data_action = [
         reference: "PHB, pgs. 15, 25-26, 362",
         bullets: [
             "<b>Equiparse y desequiparse armas.</b> Como parte de un ataque con arma, puedes equipartela o desequipartela. Puedes hacerlo antes o después del ataque. Equiparte incluye desenvainar o recogerla. Desequipar incluye envainar, guardar o soltarla.",
-            "Algunos rasgos, como <i>Ataque Adicional</i> del guerrero, te permiten hacer mas de un ataque con esta acción. Cada uno de estos ataques es una tirada aparte y puede tener disintas criaturas como objetivo. Te puedes mover entre estos ataques.", 
-            "Puedes sustituir uno de tus ataques cuerpo a cuerpo por <i>Agarre</i> o <i>Empujón</i>",
+            "<b>Moverse entre ataques.</b> Si te mueves en tu turno y tienes un rasgo, <i>Ataque Adicional</i>, que te permite hacer varios ataques como parte de la acción de atacar, puedes usar parte del movimiento o todo él para moverte entre esos ataques.", 
+
+            "<b>Ataque sin armas</b>. Si tu ataque es sin armas puedes hacer:<ul>"
+            + "<li>Daño. Haz una tirada de ataque contra el objetivo. Tu bonificador es tu modificador por Fuerza mas bon. por competencia. Haces daño contundente = 1 + modificador por Fuerza.</li>"
+            + "<li>Agarre. Ver <i>Agarre</i>.</li>"
+            + "<li>Empujón. Ver <i>Empujar</i>.</li>"
+            + "</ul>"
         ]
     },
     {
@@ -37,46 +42,62 @@ data_action = [
         ]
     },
     {
-        title: "Cast a spell",
+        title: "Magia",
         icon: "magic-swirl",
-        subtitle: "Cast time of 1 action",
-        description: "Cast a spell with a casting time of 1 action",
-        reference: "PHB, pg. 192.",
+        subtitle: "Tiempo de lanzamiento de 1 acción",
+        description: "Lanza un conjuro con tiempo de lanzamiento: acción",
+        reference: "PHB, pg. 236-237, 364.",
         bullets: [
-            "You can't cast a spell with you action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
-            "The target of a spell must be within the spell's range. To target something, you must have a clear path to it, so it can't be behind total cover.",
-            "Spells with material components do not consume the material unless explicitly stated. Unless the cost of a material is given, you can assume that the cost is negligible and the material is simply available in a component pouch.",
-            "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends. You lose concentration on a spell if you cast another spell that requires concentration or when you are incapacitated. Each time you take damage, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher."
+            "Si el conjuro tiene un tiempo de lanzamiento de 1 minuto o superior, debes de realizar la acción de magia cada turno y mantener concentración mientras lo haces. Si pierdes la concentración el conjuro falla pero no gastas espacio de conjuro.",
+            "Durante un turno, solo puedes gastar un espacio de conjuro para lanzar un conjuro. No puedes, por ejemplo, lanzar un conjuro gastando un espacio como acción y otro como acción adicional.",
+            "<b>Concentración.</b> Algunos conjuros requieren concentración para permanecer activos. Si pierdes la concentración, el conjuro concluye. Puedes dejar de concentrarte en cualquier momento (no requiere acción).<ul>"+
+            "<li><b>Otro efecto de concentración.</b> Pierdes la concentración en un efecto en cuanto comienzas a lanzar otro conjuro que requiera concentración.</li>"+
+            "<li><b>Daño.</b> Si sufres daño, debes superar una tirada de salvación de Constitución para mantenerte concentrado. La CD es 10 o la mitad del daño sufrido (redondeando hacia abajo), hasta un máximo de 30.</li>"+
+            "<li><b>Incapacitado o muerto.</b> Tu concentración acaba si tienes el estado incapacitado o mueres.</li>"+
+            "</ul>"
+        ]
+    },
+        {
+        title: "Estudiar",
+        icon: "semi-closed-eye",
+        subtitle: "Identifica un conjuro activo",
+        description: "",
+        reference: "PHB, pg. 238, 375.",
+        bullets: [
+            "Si aun está activo, puedes intentar identificar un conjuro <b>no instantáneo</b> por sus efectos activos observables.",
+            "Lleva a cabo una acción de estudiar y supera una prueba de <b>Inteligencia (C. Arcano) con CD 15</b>."
         ]
     },
     {
-        title: "Dash",
+        title: "Correr",
         icon: "sprint",
-        subtitle: "Double movement speed",
-        description: "Gain extra movement for the current turn",
-        reference: "PHB, pg. 192.",
+        subtitle: "Velocidad de movimiento doble",
+        description: "",
+        reference: "PHB, pg. 365.",
         bullets: [
-            "The increase equals your speed, after applying any modifiers."
+            "Consigues movimiento adicional igual a tu velocidad, tras aplicar cualquier modificador pertinente",
+            "Por ejemplo, si tu velocidad fuera de 30 pies, podrías moverte 60 en un turno en el que corras."
         ]
     },
     {
-        title: "Disengage",
+        title: "Destrabarse",
         icon: "journey",
-        subtitle: "Prevent opportunity attacks",
-        description: "Your movement doesn't provoke opportunity attacks for the rest of the turn",
-        reference: "PHB, pg. 192.",
+        subtitle: "Evita ataques de oportunidad",
+        description: "Tu movimiento no provoca ataques de oportunidad durante el resto del turno actual.",
+        reference: "PHB, pg. 366.",
         bullets: [
         ]
     },
     {
-        title: "Dodge",
+        title: "Esquivar",
         icon: "aura",
-        subtitle: "Increase defenses",
+        subtitle: "Aumenta tu defensa",
         description: "Focus entirely on avoiding attacks",
-        reference: "PHB, pg. 192.",
+        reference: "PHB, pg. 367.",
         bullets: [
-            "Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage.",
-            "You lose this benefit if you are <i>incapacitated</i> or if your speed drops to 0."
+            "Hasta el principio de tu siguiente turno, las tiradas de ataque contra ti tendrán desventaja si puedes ver al atacante.",
+            "Tendrás ventaja en las tiradas de salvación de Destreza",
+            "Pierdes estos beneficios si tienes el estado <l>incapacitado</l> o si tu velocidad es 0"
         ]
     },
     {
@@ -91,15 +112,16 @@ data_action = [
         ]
     },
     {
-        title: "Help",
+        title: "Ayudar",
         icon: "telepathy",
-        subtitle: "Grant an ally advantage",
-        description: "Grant an ally advantage on an ability check or attack",
-        reference: "PHB, pg. 192.",
+        subtitle: "Das ventaja a un aliado",
+        description: "Das ventaja a un aliado en una prueba de característica o ataque.",
+        reference: "PHB, pg. 363.",
         bullets: [
-            "The target gains advantage on the next ability check it makes to perform the task you are helping with.",
-            "Alternatively, the target gains advantage on the next attack roll against against a creature within 5 feet of you.",
-            "The advantage lasts until the start of your next turn."
+            "<b>Ayudar en una prueba de característica.</b> Elige una de tus competencias en habilidades o herramientas y un aliado. Ese aliado tiene ventaja en la siguiente prueba de habilidad o herramienta elegida. "
+            +"Este beneficio concluye si el aliado no lo usa antes del principio de tu siguiente turno",
+            "<b>Ayudar en una tirada de ataque.</b> Distraes a un enemigo a 5 pies o menos de ti, lo que da ventaja a la siguiente tirada de ataque que un aliado haga contra ese enemigo" 
+            +"Este beneficio concluye al principio de tu siguiente turno"
         ]
     },
     {
@@ -125,31 +147,33 @@ data_action = [
         ]
     },
     {
-        title: "Hide",
+        title: "Esconderse",
         icon: "hood",
         subtitle: "",
-        description: "Attempt to hide",
-        reference: "PHB, pg. 192.",
+        description: "Tratas de ocultarte",
+        reference: "PHB, pg. 367.",
         bullets: [
-            "You can't hide from a creature that can see you. You must have total cover, be in a heavily obscured area, be invisible, or otherwise block the enemy's vision.",
-            "If you make noise (such as shouting a warning or knocking over a vase), you give away your position.",
-            "When you try to hide, make a Dexterity (Stealth) check and note the result. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.",
-            "A creature notices you even if it isn't searching unless your Stealth check is higher than its Passive Perception.",
-            "Out of combat, you may also use a Dexterity (Stealth) check for acts like concealing yourself from enemies, slinking past guards, slipping away without being noticed, or sneaking up on someone without being seen or heard."
+            "Debes de superar una prueba de Destreza (Sigilo) CD 15 mientras estás en una zona muy oscura o detrás de una cobertura tres cuartos o completa, y deberás de estar fuera de línea de visión de cualquier enemigo; si puedes ver a una criatura, sabrás si te puede ver o no.",
+            "Si la superas, tendrás el estado <i>invisible</i> mientras permanezcas oculto. Anota el resultado de tu prueba, que es la CD para que te detecten con Sabiduría (Percepción).",
+            "Dejas de estar oculto si: <br><ul><li>haces ruido mas alto que un sususurro</li><li>un enemigo te detecta</li><li>haces una tirada de ataque</li><li>lanzas un conjuro con componente verbal</li><ul>"
         ]
     },
     {
-        title: "Search",
+        title: "Buscar",
         icon: "magnifying-glass",
-        subtitle: "",
-        description: "Devote your attention to finding something",
-        reference: "PHB, pg. 193.",
+        subtitle: "Usa tu sabiduría",
+        description: "",
+        reference: "PHB, pg. 363.",
         bullets: [
-            "Depending on the nature of your search, the DM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check."
+            "Realizas una prueba de Sabiduría para distinguir algo que no resulta evidente",
+            "<b>Medicina</b>. Dolencia o causa de la muerte de una criatura.",
+            "<b>Percepción</b>. Criatura u objeto ocultos.",
+            "<b>Perspicacia</b>.  Estado mental de una criatura.",
+            "<b>Supervivencia</b>. Huellas o alimentos."
         ]
     },
     {
-        title: "Ready",
+        title: "Preparar una acción",
         icon: "stopwatch",
         subtitle: "Choose trigger and action",
         description: "Choose a trigger and a response reaction",
@@ -159,16 +183,6 @@ data_action = [
             "Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it.",
             "When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger.",
             "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration"
-        ]
-    },
-    {
-        title: "Use class feature",
-        icon: "embrassed-energy",
-        subtitle: "Some features use actions",
-        description: "Use a racial or class feature that uses an action",
-        reference: "See class page for more information.",
-        bullets: [
-
         ]
     },
     {
@@ -184,13 +198,13 @@ data_action = [
         ]
     },
     {
-        title: "Improvise",
+        title: "Improvisar",
         icon: "juggler",
-        subtitle: "Any action not on this list",
-        description: "Perform any action you can imagine",
-        reference: "PHB, pg. 193.",
+        subtitle: "Cualquier otra acción",
+        description: "Haz cualquier acción que te imagines",
+        reference: "PHB, pg. 15.",
         bullets: [
-            "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
+            "Para realizar una acción que no aparezcan en las reglas, tu DM te dirá si esa acción es posible y que tipo de prueba con d20 tienes que realizar (si fuera necesario)."
         ]
     }
 ]
