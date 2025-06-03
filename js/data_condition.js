@@ -3,48 +3,47 @@ data_condition = [
         title: "Agarrado",
         icon: "grab",
         subtitle: "Grappled",
-        description: "You are grappled",
-        reference: "PHB, pg. 290.",
+        description: "Estás agarrad",
+        reference: "PHB, pg. 360.",
         bullets: [
-            "Your speed becomes 0, and you can't benefit from any bonus to your speed.",
-            "The condition ends if your grappler is incapacitated.",
-            "The condition also ends if you are removed from the reach of your grappler."
+            "Tu velocidad es 0 y no se puede aumentar.",
+            "Tienes desventaja en las tiradas de ataque contra cualquier objetivo que no sea quien te agarra.",
+            "Quien te agarra puede arrastrarte o transportarte al moverse, pero cada pie de movimiento le cuesta 1 pie adicional, salvo que seas Diminuto o tu tamaño  sea dos o mas categorías inferior al suyo."
         ]
     },
     {
         title: "Apresado",
         icon: "imprisoned",
         subtitle: "Restrained",
-        description: "You are restrained",
-        reference: "PHB, pg. 292.",
+        description: "Estás apresado",
+        reference: "PHB, pg. 361.",
         bullets: [
-            "Your speed becomes 0, and you can't benefit from any bonus to your speed.",
-            "You have disadvantage on attack rolls.",
-            "Attack rolls against you have advantage.",
-            "You have disadvantage on Dexterity saving throws."
+            "Tu velocidad es 0 y no se puede aumentar.",
+            "Las tiradas de ataque contra ti tienen ventaja y tus tiradas de ataque tienen desventaja.",
+            "Tienes desventaja en las tiradas de salvación de Destreza."
         ]
     },
     {
         title: "Asustado",
         icon: "sharp-smile",
         subtitle: "Frightened",
-        description: "You are frightened",
-        reference: "PHB, pg. 290.",
+        description: "Estás asustado",
+        reference: "PHB, pg. 362.",
         bullets: [
-            "You have disadvantage on ability checks and attack rolls while the source of your fear is within line of sight.",
-            "You can't willingly move closer to the source of your fear."
+            "Tienes desventaja en pruebas de característica y tiradas de ataque mientras la fuente de tu miedo esté en tu línea de visión.",
+            "No puedes acercarte voluntariamente a la fuente de tu miedo."
         ]
     },
     {
         title: "Aturdido",
         icon: "internal-injury",
         subtitle: "Stunned",
-        description: "You are stunned",
-        reference: "PHB, pg. 292.",
+        description: "Estás aturdido",
+        reference: "PHB, pg. 362.",
         bullets: [
-            "You are incapacitated, can't move, and can speak only falteringly.",
-            "Attack rolls against you have advantage.",
-            "You automatically fail Strength and Dexterity saving throws."
+            "Tienes el estado de <i>incapacitado</i>.",
+            "Fallas automáticamente las tiradas de salvación de Fuerza y Destreza.",
+            "Las tiradas de ataque contra ti tienen ventaja."
         ]
     },
     {
@@ -52,7 +51,7 @@ data_condition = [
         icon: "crawl",
         subtitle: "Exhaustion",
         description: "El cansancio se mide en 6 niveles",
-        reference: "PHB, pg. 366.",
+        reference: "PHB, pg. 363.",
         bullets: [
             "<table>" +
             "<tr><th style='text-align:left;width:30%'>Nivel</th><th style='text-align:left;width:40%'>Tiradas d20</th></th><th style='text-align:left'>Velocidad</th></tr>" +
@@ -63,9 +62,9 @@ data_condition = [
             "<tr><td>5</td><td>-10</td><td>-25'</td></tr>" +
             "<tr><td>6</td><td>Muerte</td><td></td></tr>" +
             "</table>",
-            "<b>Niveles de cansancio.</b> Este estado es acumulativo. Cuando lo recibes, subes un nivel de cansancio. Mueres si tu Cansancio es nivel 6.",
-            "<b>Pruebas de d20 afectadas.</b> Cuando haces una prueba con d20, la tirada se reduce en 2 por nivel de cansancio.",
-            "<b>Velocidad reducida.</b> Tu velocidad se reduce en 5 pies por cada nivel de Cansancio.",
+            "<b>Niveles de cansancio.</b> Este estado es acumulativo. Cuando lo recibas, suma 1 nivel de cansancio. Mueres si tu nivel de Cansancio es 6.",
+            "<b>Pruebas de d20 afectadas.</b> Cuando haces una prueba con d20, la tirada se reduce en 2 &#215; tu nivel de cansancio.",
+            "<b>Velocidad reducida.</b> Tu velocidad se reduce en 5 pies &#215; tu nivel de cansancio.",
             "<b>Reducir nivel de cansancio.</b> Al terminar un descanso largo reduces en 1 tu nivel de cansancio. Cuando llega a 0, el estado acaba."
         ]
     },
@@ -73,118 +72,127 @@ data_condition = [
         title: "Cegado",
         icon: "one-eyed",
         subtitle: "Blinded",
-        description: "You can't see",
-        reference: "PHB, pg. 290.",
+        description: "No puedes ver",
+        reference: "PHB, pg. 364.",
         bullets: [
-            "You automatically fail any ability check which requires sight.",
-            "You have disadvantage on attack rolls.",
-            "Attack rolls against you have advantage."
+            "Fallas automáticamente todas las pruebas de característica que requieran la vista.",
+            "Las tiradas de ataque contra ti tienen ventaja y tus tiradas de ataque tienen desventaja."
         ]
     },
     {
         title: "Derribado",
         icon: "crawl",
         subtitle: "Prone",
-        description: "You are prone",
-        reference: "PHB, pg. 292.",
+        description: "Estás derribado",
+        reference: "PHB, pg. 365.",
         bullets: [
-            "Your only movement option is to crawl, unless you stand up.",
-            "You have disadvantage on attack rolls.",
-            "Attack rolls against you have advantage if the attacker is within 5 feet of you, otherwise the attack roll has disadvantage."
+            "Puedes arrastrarte.",
+            "Puedes levantarte gastando la mitad de tu velocidad. Si tu velocidad es 0, no puedes levantarte.",
+            "Tienes desventaja en las tiradas de ataque.",
+            "Las tiradas de ataque contra ti tienen ventaja si el atacante está a 5 pies o menos de ti. De lo contrario, tienen desventaja."
         ]
     },
     {
         title: "Ensordecido",
         icon: "elf-ear",
         subtitle: "Deafened",
-        description: "You can't hear",
-        reference: "PHB, pg. 290.",
+        description: "No puedes oír",
+        reference: "PHB, pg. 367.",
         bullets: [
-            "You automatically fail any ability check which requires hearing."
+            "Fallas automáticamente cualquier prueba de característica que requiera el oído."
         ]
     },
     {
         title: "Envenenado",
         icon: "deathcab",
         subtitle: "Poisoned",
-        description: "You are poisoned",
-        reference: "PHB, pg. 292.",
+        description: "Estás envenenado",
+        reference: "PHB, pg. 367.",
         bullets: [
-            "You have disadvantage on attack rolls and ability checks."
+            "Tienes desventaja en las tiradas de ataque y las pruebas de característica."
         ]
     },
     {
         title: "Hechizado",
         icon: "smitten",
         subtitle: "Charmed",
-        description: "You are charmed by another creature",
-        reference: "PHB, pg. 290.",
+        description: "Estás hechizado por otra criatura",
+        reference: "PHB, pg. 368.",
         bullets: [
-            "You can't attack your charmer or target them with harmful abilities or magical effects.",
-            "Your charmer has advantage on ability checks to interact socially with you."
+            "No puedes atacar ni elegir como objetivo de efectos dañinos o mágicos a quiente haya hechizado.",
+            "Quien te haya hezhicado tiene ventaja en las pruebas de característica para interactuar socialmente contigo."
         ]
     },
     {
         title: "Incapacitado",
         icon: "internal-injury",
         subtitle: "Incapacitated",
-        description: "You can't take actions or reactions",
-        reference: "PHB, pg. 290.",
+        description: "Estás incapacitado",
+        reference: "PHB, pg. 368.",
         bullets: [
+            "No puedes llevar a cabo ninguna acción, acción adicional o reacción.",
+            "Pierdes la concentración.",
+            "Tienes desventaja en tiradas de iniciativa."
         ]
     },
         {
         title: "Inconsciente",
         icon: "coma",
         subtitle: "Unconscious",
-        description: "You are unconscious",
-        reference: "PHB, pg. 292.",
+        description: "Estás inconsciente",
+        reference: "PHB, pg. 369.",
         bullets: [
-            "You are incapacitated, can't move or speak, and are unaware of your surroundings.",
-            "You drop whatever you're holding and fall prone.",
-            "Attack rolls against you have advantage.",
-            "Any attack that hits you is a critical hit if the attacker is within 5 feet of you.",
-            "You automatically fail Strength and Dexterity saving throws.",
+            "Tienes los estados <i>derribado</i> e <i>incapacitado</i>.",
+            "Sueltas lo que estés sujetando.",
+            "Cuando concluya este estado, sigues <i>derribado</i>",
+            "Tu velocidad es 0 y no puede aumentar",
+            "Las tiradas de ataque contra ti tienen ventaja.",
+            "Fallas automáticamente las salvaciones de Fuerza y Destreza.",
+            "Cualquier tirada de ataque que te acierte es un crítico si el atacante está a 5' o menos de ti.",
+            "No eres consciente de tu entorno"
         ]
     },
     {
         title: "Invisible",
         icon: "invisible",
         subtitle: "Invisible",
-        description: "You can't be seen without the aid of magic or a special sense",
-        reference: "PHB, pg. 291.",
+        description: "Eres invisible",
+        reference: "PHB, pg. 369.",
         bullets: [
-            "For the purpose of hiding, you are heavily obscured.",
-            "You can still be detected by any noise you make or tracks you leave.",
-            "You have advantage on attack rolls.",
-            "Attack rolls against you have disadvantage."
+            "Tienes ventaja en tiradas de iniciativa.",
+            "No te afecta ningún efecto que requiera ver a su objetivo, salvo que el creador del efecto pueda verte de alguna forma",
+            "Cualquier equipo que vistas o lleves contigo también se oculta",
+            "Las tiradas de ataque contra ti tienen desventaja y tus tiradas de ataque tienen ventaja. Si una criatura puede verte de alguna forma, no obtienes este beneficio contra esa criatura"
         ]
     },
     {
         title: "Paralizado",
         icon: "internal-injury",
         subtitle: "Paralyzed",
-        description: "You can't do anything",
+        description: "Estás paralizado",
+        reference: "PHB, pg. 371.",
         bullets: [
-            "You are incapacitated and can't move or speak.",
-            "Attack rolls against you have advantage.",
-            "Any attack that hits you is a critical hit if the attacker is within 5 feet of you.",
-            "You automatically fail Strength and Dexterity saving throws."
+            "Tienes el estado <i>incapacitado</i>.",
+            "Tu velocidad es 0 y no puede aumentar",
+            "Las tiradas de ataque contra ti tienen ventaja.",
+            "Fallas automáticamente las salvaciones de Fuerza y Destreza.",
+            "Cualquier tirada de ataque que te acierte es un crítico si el atacante está a 5' o menos de ti."
         ]
     },
     {
         title: "Petrificado",
         icon: "stone-pile",
         subtitle: "Petrified",
-        description: "You are transformed, along with any nonmagical objects you are wearing or carrying, into a solid inanimate substance (usually stone)",
-        reference: "PHB, pg. 291.",
+        description: "Estás petrificado",
+        reference: "PHB, pg. 372.",
         bullets: [
-            "Your weight increases by a factor of ten, and you cease aging.",
-            "You are incapacitated, can't move or speak, and are unaware of your surroundings.",
-            "Attack rolls against you have advantage.",
-            "You automatically fail Strength and Dexterity saving throws.",
-            "You have resistance to all damage.",
-            "You are immune to poison and disease, though a poison or disease already in your system is only suspended, not neutralized."
+            "Te transformas, junto a cualquier objeto no mágico que vistas o lleves contigo, en una sustancia sólida e inanimada (normalmente piedra)",
+            "Tu peso se multiplica por diez y dejas de envejecer.",
+            "Tu velocidad es 0 y no puede aumentar",
+            "Las tiradas de ataque contra ti tienen ventaja.",
+            "Fallas automáticamente las salvaciones de Fuerza y Destreza.",
+            "Tienes resistencia a todo el daño",
+            "Tienes inmunidad al estado <i>envenenado</i>."
         ]
     },
     {
@@ -194,7 +202,7 @@ data_condition = [
         description: "Tus puntos de golpe se han reducido a 0 y estás muriendo.",
         reference: "PHB, pg. 28.",
         bullets: [
-            "Si tus pg se reducen a 0, pero no mueres al instante, tendrás el estado <i>inconsciente</i> hasta que recuperes cualquier cantidad de pg y deberás realizar tiradas de salvación contra muerte.",
+            "Si tus pg se reducen a 0, pero no mueres al instante, tendrás el estado <i>inconsciente</i> hasta que recuperes cualquier cantidad de pg.",
             "Siempre que empieces tu turno con 0 pg, deberás de hacer una tirada de salvación contra muerte.",
             "Tira 1d20. Si el resultado es 10 o más, tienes éxito. De lo contrario fallas.",
             "En tu tercer éxito, te estabilizas.",
