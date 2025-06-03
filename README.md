@@ -1,20 +1,14 @@
 dnd5e-quickref
 ==============
 
-Quick reference sheet for D&amp;D 5e
+Referencia rápida para D&D (2024) en español. El texto está basado en el Manual del Jugador oficial.
 
+Lo puedes ver en https://rogmed.github.io/quickref.html
 
-Icons
-==============
-
-All icons are provided by http://game-icons.net/
-
+El proyecto es un fork de: https://github.com/crobi/dnd5e-quickref
 
 FAQ
 ===
 
-#### Q: I have found a layout issue or a major issue in one of the core items, what should I do? ####
-A: Open an issue at https://github.com/crobi/dnd5e-quickref/issues. Even better: fork the project, fix the problem, and post a pull request.
-
-#### Q: I have an idea for a minor tweak, such as adding actions specific for my character. How do I modify the content of the sheet? ####
-A: Open the subfolder called `js`, and edit one of the `data` files. Ask your local computer geek for help if you don't know how to edit those.
+#### Q: He encontrado un error o tengo alguna sugerencia, ¿puedo contactar con alguien? ####
+A: Si, conmigo en rogeliomdn@gmail.com
