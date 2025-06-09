@@ -166,6 +166,14 @@
     color: ForestGreen;
 }
 
+#section-dangers, #section-dangers .item-icon {
+    background-color: goldenrod;
+    border-color: goldenrod;
+}
+#section-dangers .text {
+    color: goldenrod;
+}
+
 #section-mastery, #section-mastery .item-icon {
     background-color: darkred;
     border-color: darkred;
