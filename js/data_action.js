@@ -8,7 +8,6 @@ data_action = [
         bullets: [
             "<b>Equiparse y desequiparse armas.</b> Como parte de un ataque con arma, puedes equipartela o desequipartela. Puedes hacerlo antes o después del ataque. Equiparte incluye desenvainar o recogerla. Desequipar incluye envainar, guardar o soltarla.",
             "<b>Moverse entre ataques.</b> Si te mueves en tu turno y tienes un rasgo, <i>Ataque Adicional</i>, que te permite hacer varios ataques como parte de la acción de atacar, puedes usar parte del movimiento o todo él para moverte entre esos ataques.",
-
             "<b>Ataque sin armas</b>. Si tu ataque es sin armas puedes hacer:<ul>"
             + "<li>Daño. Haz una tirada de ataque contra el objetivo. Tu bonificador es tu modificador por Fuerza mas bon. por competencia. Haces daño contundente = 1 + modificador por Fuerza.</li>"
             + "<li>Agarre. Ver <i>Agarre</i>.</li>"
@@ -75,10 +74,14 @@ data_action = [
         reference: "PHB, pg. 363.",
         bullets: [
             "Realizas una prueba de Sabiduría para distinguir algo que no resulta evidente",
-            "<b>Medicina</b>. Dolencia o causa de la muerte de una criatura.",
-            "<b>Percepción</b>. Criatura u objeto ocultos.",
-            "<b>Perspicacia</b>.  Estado mental de una criatura.",
-            "<b>Supervivencia</b>. Huellas o alimentos."
+            "<b>BÚSQUEDA</b>" +
+            "<table>" +
+            "<tr style><th style='text-align:left;width:30%'>Habilidad</th><th style='text-align:left;width:40%'>Objeto de detección</th>" +
+            "<tr><td>Medicina</td><td>Dolencia o causa de la muerte de una criatura</td></tr>" +
+            "<tr><td>Percepción</td><td>Criatura u objeto ocultos</td></tr>" +
+            "<tr><td>Perspicacia</td><td>Estado mental de una criatura</td></tr>" +
+            "<tr><td>Supervivencia</td><td>Huellas o alimentos</td></tr>" +
+            "</table>"
         ]
     },
     {
@@ -139,12 +142,55 @@ data_action = [
     {
         title: "Estudiar",
         icon: "semi-closed-eye",
+        subtitle: "Haces una prueba de Inteligencia",
+        description: "",
+        reference: "PHB, pg. 368.",
+        bullets: [
+            "Haces una prueba de Inteligencia para explorar tus recuerdos o examinar un libro, una pista u otra forma de conocimiento y recordar algún dato importante.",
+            "<b>ÁREAS DE CONOCIMIENTO</b>" +
+            "<table>" +
+            "<tr style><th style='text-align:left;width:30%'>Habilidad</th><th style='text-align:left;width:40%'>Áreas</th>" +
+            "<tr><td>Conocimiento arcano</td><td>Conjuros, objetos mágicos, símbolos sobrenaturales, tradiciones mágicas, planos de existencia y determinadas criaturas (aberraciones, autómatas, elementales, feéricos y monstruosidades)</td></tr>" +
+            "<tr><td>Historia</td><td>Acontecimientos y personajes históricos, civilizaciones antiguas, guerras y determinadas criaturas (gigantes y humanoides)</td></tr>" +
+            "<tr><td>Investigación</td><td>Trampas, códigos, enigmas y artilugios</td></tr>" +
+            "<tr><td>Naturaleza</td><td>Terreno, flora, clima y determinadas criaturas (bestias, cienos, dragones y plantas)</td></tr>" +
+            "<tr><td>Religión</td><td>Deidades, jerarquías religiosas y ritos, símbolos sagrados, sectas y determinadas criaturas (celestiales, infernales y muertos vivientes)</td></tr>" +
+            "</table>"
+        ]
+    },
+    {
+        title: "Identificar conjuro [Estudiar]",
+        icon: "semi-closed-eye",
         subtitle: "Identifica un conjuro activo",
         description: "",
-        reference: "PHB, pg. 238, 375.",
+        reference: "PHB, pg. 238.",
         bullets: [
-            "Si aun está activo, puedes intentar identificar un conjuro <b>no instantáneo</b> por sus efectos activos observables.",
-            "Lleva a cabo una acción de estudiar y supera una prueba de <b>Inteligencia (C. Arcano) con CD 15</b>."
+            "Si aun está activo, puedes intentar identificar un conjuro <b>no instantáneo</b> por sus efectos observables.",
+            "Lleva a cabo una acción de <i>estudiar</i> y supera una prueba de <b>Inteligencia (C. Arcano) con CD 15</b>."
+        ]
+    },
+    {
+        title: "Influir",
+        icon: "bird-twitter",
+        subtitle: "Insta a un monstruo a que haga algo",
+        description: "¿Tratas de engañarlo, intimidarlo, entretenerlo o persuadirlo disimuladamente?",
+        reference: "PHB, pg. 369.",
+        bullets: [
+            "El monstruo puede mostrarse voluntario o no voluntario, o estar indeciso",
+            "<b>Voluntario.</b> No hace falta tirada.",
+            "<b>No voluntario.</b> Si tu deseo le resulta aversivo o no concuerda con su alineamiento: no lo aceptará.",
+            "<b>Indeciso.</b> Realiza una prueba de característica, en la que influye la actitud del monstruo: indiferente, amistosa (ventaja) u hostil (desventaja).",
+            "La prueba tiene CD 15 o la puntuación de Inteligencia del monstruo, la que sea mas alta.",
+            "Si la fallas debes de esperar 24 horas antes de volver a insistir",
+            "<b>PRUEBAS DE INFLUENCIA</b>" +
+            "<table>" +
+            "<tr style><th style='text-align:left;width:30%'>Prueba de característica</th><th style='text-align:left;width:40%'>Interacción</th>" +
+            "<tr><td>Carisma (Engaño)</td><td>Engañar a un monstruo que te entienda</td></tr>" +
+            "<tr><td>Carisma (Interpretación)</td><td>Entretener a un monstruo</td></tr>" +
+            "<tr><td>Carisma (Intimidación)</td><td>Intimidar a un monstruo</td></tr>" +
+            "<tr><td>Carisma (Persuasión)</td><td>Persuadir a un monstruo que te entienda</td></tr>" +
+            "<tr><td>Sabiduría (Trato con animales)</td><td>Convencer poco a poco a un bestia o monstruosidad</td></tr>" +
+            "</table>"
         ]
     },
     {

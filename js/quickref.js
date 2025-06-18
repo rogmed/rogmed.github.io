@@ -66,6 +66,7 @@ function init() {
     fill_section(data_environment_light, "environment-light", "Entorno");
     fill_section(data_environment_vision, "environment-vision", "Entorno");
     fill_section(data_environment_cover, "environment-cover", "Entorno");
+    fill_section(data_dangers, "dangers", "Peligros");
     fill_section(data_mastery, "basic-masteries", "Maestría");
 
     var modal = document.getElementById("modal");

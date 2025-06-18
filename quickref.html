@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>D&D 5e quick reference</title>
+    <title>D&D 5.5e referencia rápida</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/quickref.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
@@ -19,9 +19,16 @@
 <body class="page-background">
     <div class="page fontsize" data-size="fullscreen">
 
+        <!-- Title section -->
+        <div id="section-title" class="section-container">
+            <div class="section-title">
+                Referencia rápida 5.5E <span class="float-right">PHB 2024</span>
+            </div>
+        </div>
+
         <!-- Movement section -->
         <div id="section-movement" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Movimiento <span class="float-right">limitado por velocidad de movimiento</span>
             </div>
             <div class="section-content">
@@ -35,7 +42,7 @@
 
         <!-- Action section -->
         <div id="section-action" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Acción <span class="float-right">1/turno</span>
             </div>
             <div class="section-content">
@@ -48,7 +55,7 @@
 
         <!-- Bonus action section -->
         <div id="section-bonus-action" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Acción adicional <span class="float-right">max. 1/turno</span>
             </div>
             <div class="section-content">
@@ -63,7 +70,7 @@
 
         <!-- Reaction section -->
         <div id="section-reaction" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Reacción <span class="float-right">max. 1/ronda</span>
             </div>
             <div class="section-content">
@@ -77,7 +84,7 @@
 
         <!-- Condition section -->
         <div id="section-condition" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Estados
             </div>
             <div class="section-content">
@@ -90,7 +97,7 @@
 
         <!-- Environmental section -->
         <div id="section-environment" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Entorno
             </div>
             <div class="section-content">
@@ -114,9 +121,22 @@
             </div>
         </div>
 
+        <!-- Dangers section -->
+        <div id="section-dangers" class="section-container">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
+                Peligros
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    Situación contextual comprometida.
+                </div>
+                <div class="section-row" id="dangers"></div>
+            </div>
+        </div>
+
         <!-- Mastery section -->
         <div id="section-mastery" class="section-container">
-            <div class="section-title">
+            <div class="section-title" onclick="toggle(this)" style="cursor: pointer;">
                 Propiedades de Maestría
             </div>
             <div class="section-content">
@@ -153,6 +173,20 @@
         </div>
     </div>
 
+    <!-- Button to hide content sections -->
+    <script>
+        let toggle = button => {
+            let element = button.nextElementSibling;
+            let hidden = element.getAttribute("hidden");
+
+            if (hidden) {
+                element.removeAttribute("hidden");
+            } else {
+                element.setAttribute("hidden", "hidden");
+            }
+        }
+    </script>
+
     <!-- Data -->
     <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
@@ -160,6 +194,7 @@
     <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_dangers.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_mastery.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
 </body>
